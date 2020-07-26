@@ -4,6 +4,11 @@ React Native Wrapper for UOL PlugPag
 
 ## Installation
 
+Siga as instruções de instalação do projeto da plugpagservice
+https://github.com/pagseguro/pagseguro-sdk-plugpagservicewrapper/blob/master/README.md
+
+e
+
 ```sh
 npm install react-native-plugpag-wrapper
 ```
@@ -15,7 +20,8 @@ import PlugpagWrapper from "react-native-plugpag-wrapper";
 
 // ...
 
-const result = await PlugpagWrapper.multiply(3, 7);
+Get PlugPag Lib Version
+const result = await PlugpagWrapper.getPlugPagVersion();
 ```
 
 ## Contributing

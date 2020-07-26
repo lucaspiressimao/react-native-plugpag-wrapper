@@ -3,10 +3,10 @@ import { StyleSheet, View, Text } from 'react-native';
 import PlugpagWrapper from 'react-native-plugpag-wrapper';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<String | undefined>();
 
   React.useEffect(() => {
-    PlugpagWrapper.multiply(3, 7).then(setResult);
+    PlugpagWrapper.getPlugPagVersion().then(setResult);
   }, []);
 
   return (
