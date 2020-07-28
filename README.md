@@ -4,6 +4,9 @@ React Native Wrapper for UOL PlugPag
 
 ## Installation
 
+IOS -> Not supported
+Android -> minSdkVersion 19
+
 ```sh
 npm install react-native-plugpag-wrapper
 ```
