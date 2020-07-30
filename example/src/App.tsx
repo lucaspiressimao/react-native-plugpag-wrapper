@@ -3,15 +3,21 @@ import { StyleSheet, View, Text } from 'react-native';
 import PlugpagWrapper from 'react-native-plugpag-wrapper';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [applicationCode, setapplicationCode] = React.useState<String | undefined>();
+  const [libversion, setlibversion] = React.useState<String | undefined>();
+  const [absolutePath, setabsolutePath] = React.useState<String | undefined>();
 
   React.useEffect(() => {
-    PlugpagWrapper.multiply(3, 7).then(setResult);
+    PlugpagWrapper.getApplicationCode().then(setapplicationCode);
+    PlugpagWrapper.getLibVersion().then(setlibversion);
+    PlugpagWrapper.getAbsolutePath().then(setabsolutePath);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Application Code: {applicationCode}</Text>
+      <Text>Lib Version: {libversion}</Text>
+      <Text>Absolute Path: {absolutePath}</Text>
     </View>
   );
 }

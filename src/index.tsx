@@ -1,7 +1,9 @@
 import { NativeModules } from 'react-native';
 
 type PlugpagWrapperType = {
-  multiply(a: number, b: number): Promise<number>;
+  getApplicationCode(): Promise<String>;
+  getLibVersion(): Promise<String>;
+  getAbsolutePath(): Promise<String>;
 };
 
 const { PlugpagWrapper } = NativeModules;

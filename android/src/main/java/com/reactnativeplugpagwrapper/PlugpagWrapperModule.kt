@@ -5,20 +5,33 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
 
+import android.os.Environment
+
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
+
 class PlugpagWrapperModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+
+    var context: ReactApplicationContext = reactContext
+    var absolutePath: String = Environment.getExternalStorageDirectory().getAbsolutePath()
+    var plugPag: PlugPag = PlugPag(reactContext)
 
     override fun getName(): String {
         return "PlugpagWrapper"
     }
 
-    // Example method
-    // See https://facebook.github.io/react-native/docs/native-modules-android
     @ReactMethod
-    fun multiply(a: Int, b: Int, promise: Promise) {
-    
-      promise.resolve(a * b)
-    
+    fun getAbsolutePath(promise: Promise) {
+      promise.resolve(absolutePath)
     }
 
-    
+    @ReactMethod
+    fun getApplicationCode(promise: Promise) {
+      promise.resolve(plugPag.getApplicationCode())
+    }
+
+    @ReactMethod
+    fun getLibVersion(promise: Promise) {
+      promise.resolve(plugPag.getLibVersion())
+    }
+
 }
