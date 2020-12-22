@@ -649,7 +649,7 @@
     "node-fetch": "^2.6.0",
     "node-int64": "^0.4.0",
     "neo-async": "^2.6.2",
-    "node-notifier": "^7.0.2",
+    "node-notifier": "^8.0.1",
     "node-stream-zip": "^1.11.2",
     "node-modules-regexp": "^1.0.0",
     "node-releases": "^1.1.59",
