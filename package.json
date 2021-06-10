@@ -875,7 +875,7 @@
     "toidentifier": "^1.0.0",
     "tough-cookie": "^2.5.0",
     "tr46": "^2.0.2",
-    "trim-newlines": "^2.0.0",
+    "trim-newlines": "^3.0.1",
     "trim-off-newlines": "^1.0.1",
     "tslib": "^1.13.0",
     "tsutils": "^3.17.1",
