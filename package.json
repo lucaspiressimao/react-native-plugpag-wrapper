@@ -798,7 +798,7 @@
     "semver-diff": "^3.1.1",
     "send": "^0.17.1",
     "serve-static": "^1.14.1",
-    "set-value": "^2.0.1",
+    "set-value": "^4.0.1",
     "serialize-error": "^2.1.0",
     "set-blocking": "^2.0.0",
     "setimmediate": "^1.0.5",
