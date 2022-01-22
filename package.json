@@ -646,7 +646,7 @@
     "negotiator": "^0.6.2",
     "minimatch": "^3.0.4",
     "nice-try": "^1.0.5",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "node-int64": "^0.4.0",
     "neo-async": "^2.6.2",
     "node-notifier": "^7.0.2",
