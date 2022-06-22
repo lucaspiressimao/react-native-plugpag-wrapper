@@ -453,7 +453,7 @@
     "has-value": "^1.0.0",
     "has-yarn": "^2.1.0",
     "has-values": "^1.0.0",
-    "hermes-engine": "^0.4.1",
+    "hermes-engine": "^0.10.0",
     "hosted-git-info": "^2.8.8",
     "html-escaper": "^2.0.2",
     "html-encoding-sniffer": "^2.0.1",
