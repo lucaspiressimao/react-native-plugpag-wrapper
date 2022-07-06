@@ -694,7 +694,7 @@
     "parse-github-repo-url": "^1.4.1",
     "parse-json": "^5.0.0",
     "package-json": "^6.5.0",
-    "parse-path": "^4.0.1",
+    "parse-path": "^5.0.0",
     "parse-node-version": "^1.0.1",
     "parse5": "^5.1.1",
     "parse-url": "^5.0.1",
