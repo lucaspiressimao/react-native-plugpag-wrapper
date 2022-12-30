@@ -405,7 +405,7 @@
     "find-up": "^4.1.0",
     "find-cache-dir": "^2.1.0",
     "find-versions": "^3.2.0",
-    "flat": "^4.1.0",
+    "flat": "^5.0.1",
     "flat-cache": "^2.0.1",
     "flatted": "^2.0.2",
     "for-in": "^1.0.2",
